@@ -1,0 +1,30 @@
+GET http://localhost:3000/movies/
+###
+
+POST http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+  "name": "Jurassic Park",
+  "img": "https://example.com/jurassic-park.jpg",
+  "summary": "A theme park showcasing genetically recreated dinosaurs turns deadly when one of the dinosaurs escapes.",
+  "id": 1
+}
+###
+GET http://localhost:3000/movies/54/
+###
+
+PUT http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+  "name": "Thor",
+  "img": "https://example.com/thor.jpg",
+  "summary": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
+  "id": 24
+}
+###
+DELETE http://localhost:3000/movies/1/
+###
+
+
